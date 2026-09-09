@@ -1,0 +1,113 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient( green, rgb(150, 249, 150), green);
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    color: white;
+    font-size: 32px;
+    gap: 20px;
+    border-left: 40px;
+    padding: 60px;
+}
+
+main{
+    height: 80vh;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.text{
+    color: white;
+    font-size: 62px;
+    position: relative;
+    top: 400px;
+    left: 800px;
+    z-index: 98;
+}
+
+.bebida{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 800px;
+    z-index: 999;
+}
+.fundo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+    padding: 40px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+
+@media(max-width: 768px) {
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+
+    header {
+        font-size: 16px;
+        padding-left: 25px;
+        top: 10px;
+    }
+    
+    header img{
+        width: 30px;
+    }
+
+    main{
+        width: 60vw;
+        height: 60vh;
+    }
+
+    .text{
+        width: 90px;
+        font-size: 18px;
+        top: 110px;
+        left: 150px;
+        position: absolute;
+        transform: translateX(0%);
+        color: white;
+        
+    }
+
+    .bebida img {
+        width: 300px;
+        top: 500px;
+        position: absolute;
+        left: 40px;
+
+    }
+
+    .fundo img{
+        padding-top:50px ;
+        padding-left: 150px;
+        width: 530px;
+
+    }
+}
